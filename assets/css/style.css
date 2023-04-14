@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* ====- SECTION-1 -==== */
+.section-1 {
+    width: 100%;
+    height: 625px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.644)50%, rgba(0, 0, 0, 0.644)50%), url(../imgs/WhatsApp\ Image\ 2022-08-28\ at\ 2.15.58\ PM.jpeg) no-repeat;
+    background-size: cover;
+}
+header {
+    position: relative;
+}
+.the-navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.the-navbar .logo a img {
+    width: 110px;
+    height: 40px;
+    margin: 15px 0 0 200px;
+}
+.header-ul {
+    display: flex;
+    gap: 2rem;
+    margin-top: 15px;
+}
+.header-li {
+    list-style: none;
+}
+.linkss {
+    text-decoration: none;
+    color: #fff;
+}
+.linkss:hover {
+    color: #dc2153;
+}
+.the-navbar .toggle-btn i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+/* ====- DROPDOWN-MENU -==== */
+.the-dropdown-menu {
+    position: absolute;
+    background-color: rgba(76, 77, 79, 0.165);
+    overflow: hidden;
+    width: 150px;
+    text-align: center;
+    right: 1.5rem;
+    top: 40px;
+    display: none;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.the-dropdown-menu.open {
+    height: 245px;
+}
+.the-dropdown-menu li {
+    padding: 5px 0;
+}
+.the-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.the-container h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.container-btn {
+    padding: 3px 15px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 3px;
+}
+.btn2 {
+    background-color: #ff0044;
+    border: none;
+    padding: 4px 15px;
+}
+/* ====- SECTION-2 -==== */
+.section-2 {
+    padding-bottom: 50px;
+}
+.section-2-title {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0 20px;
+}
+.h2-section-2 {
+    font-weight: bold;
+    font-size: 27px;
+}
+.our-mission-div h3 {
+    font-weight: bold;
+    line-height: .9;
+}
+.vedio-icon-div {
+    width: 168px;
+    display: flex;
+    justify-content: space-between;
+}
+.vedio-icon-div div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ff0044;
+}
+.vedio-icon-div div i {
+    font-size: 37px;
+    color: #fff;
+    margin: -1px 0 0px 2px;
+}
+.branding-div {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: -13px;
+}
+.pink-line {
+    width: 450px;
+    height: 10px;
+    background-color: #ff0044;
+    border-radius: 2px 0 0 2px;
+}
+.gray-line {
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 0 2px 2px 0;
+}
+.web-pink-line {
+    width: 520px;
+}
+.web-gray-line {
+    width: 30px;
+}
+.graphic-pink-line {
+    width: 480px;
+}
+.graphic-gray-line {
+    width: 70px;
+}
+.dev-pink-line {
+    width: 500px;
+}
+.dev-gray-line {
+    width: 50px;
+}
+.web {
+    margin-top: 35px;
+}
+/* ====- SECTION-3 -==== */
+.section-3 {
+    /* width: 100%; */
+    padding: 80px 0;
+    background-color: #eee;
+}
+.section-3-row {
+    display: flex;
+    justify-content: space-between;
+}
+.section3-divs {
+    /* width: 320px; */
+    text-align: center;
+    box-shadow: 0px 2px 12px rgb(177, 177, 177);
+    background-color: whitesmoke;
+    /* margin: 10px; */
+    padding: 2px 10px;
+}
+.section3-divs i {
+    font-size: 50px;
+    color: #ff0044;
+}
+.section3-divs h4 {
+    font-size: 17px;
+    font-weight: bold;
+}
+.section3-divs p {
+    color: #8f8d8d;
+    line-height: 1.3;
+}
+/* ====- RESPONSIVE-DESIGN -==== */
+@media (max-width : 992px) {
+    .header-ul {
+        display: none;
+    }
+    .the-navbar .toggle-btn i {
+        display: block;
+        margin-right: 20px;
+    }
+    .the-navbar .logo a img {
+        margin-left: 20px;
+    }
+    .the-dropdown-menu {
+        display: block;
+    }
+    .the-container h1{
+        font-size: 40px;
+    }
+    .container-btn {
+        margin-top: 7px;
+    }
+    .section-2-title {
+        width: 450px;
+    }
+    .branding-div-one {
+        padding-top: 20px;
+    }
+    .btn2 {
+        padding: 4px 12px;
+    }
+    .section-3-row {
+        justify-content: center;
+    }
+    .section3-divs {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    .the-container h1 {
+        font-size: 33px;
+    }
+    .branding-div {
+        width: 430px;
+    }
+}
